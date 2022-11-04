@@ -7,3 +7,7 @@ Ecomerce site for corgis stickers
 ## New tech
 next.js
 shopify
+
+![cards]()
+
+![single_item]()
