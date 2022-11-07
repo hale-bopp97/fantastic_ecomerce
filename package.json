@@ -23,5 +23,6 @@
   "homepage": "https://github.com/hale-bopp97/fantastic_ecomerce#readme",
   "dependencies": {
     "concurrently": "^7.5.0"
+   
   }
 }
