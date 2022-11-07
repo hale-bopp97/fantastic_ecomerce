@@ -21,7 +21,7 @@ export default function Product() {
                 {productData.map((product) => {
                     return <section>
                         <Link href={`/products/${product.name}`}>
-                            <div class='bg-purple-300 grid grid-rows-2 justify-center content-center items-center text-center'>
+                            <div className='bg-purple-300 grid grid-rows-2 justify-center content-center items-center text-center'>
                                 <img className='object-contain h-64 w-96' src={product.image}/>
 
                                 <p>{product.name}</p>
