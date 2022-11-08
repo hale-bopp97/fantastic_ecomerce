@@ -26,3 +26,25 @@ seed node seeders/seed.js
 ![cards](https://raw.githubusercontent.com/hale-bopp97/fantastic_ecomerce/77e1fc2710ada47aea7680d276dac4fed5f5aa2a/assets/Screen%20Shot%202022-11-04%20at%201.17.39%20PM.png)
 
 ![single_item](https://raw.githubusercontent.com/hale-bopp97/fantastic_ecomerce/77e1fc2710ada47aea7680d276dac4fed5f5aa2a/assets/Screen%20Shot%202022-11-04%20at%201.18.27%20PM.png)
+
+
+query Product($id: ID!) {
+  product(_id: $id) {
+    _id
+    description
+    image
+    name
+    price
+  }
+}
+
+
+query Products {
+  products {
+    _id
+    description
+    image
+    name
+    price
+  }
+}

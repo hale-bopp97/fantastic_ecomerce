@@ -1,0 +1,37 @@
+[{
+        "name": "stickers",
+        "image": "/images/stickers.jpg",
+        "description": "corgi sticker for sale",
+        "price": 4.99
+    },
+    {
+        "name": "mousepad",
+        "image": "/images/mousepad.jpg",
+        "description": "mousepad for sale",
+        "price": 2.99
+    },
+    {
+        "name": "keyboard",
+        "image": "/images/keyboard.jpg",
+        "description": "cool keyboard for sale",
+        "price": 7.99
+    },
+    {
+        "name": "mic",
+        "image": "/images/mic.jpg",
+        "description": "microphone for sale",
+        "price": 3.99
+    },
+    {
+        "name": "monitor",
+        "image": "/images/monitor.jpg",
+        "description": "lcd screen cool monitor",
+        "price": 8.99
+    },
+    {
+        "name": "headphones",
+        "image": "/images/headphones.jpg",
+        "description": "good headphones for sale",
+        "price": 9.99
+    }
+]
