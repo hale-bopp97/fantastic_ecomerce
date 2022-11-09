@@ -6,13 +6,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div>
-      <Nav/>
-      
+    <div className='bg-black'>
+      <Nav />
+
       <section className="h-screen grid justify-center px-10 py-10 content-center items-center grid-cols-2 gap-10 ">
         {/* <div className='absolute px-4 w-1/2 left-0'> */}
-        <div className=''>
-          <h1 className='text-5xl pb-3'>
+        <div className='text-sky-200 '>
+          <h1 className='text-pink-600 text-5xl pb-3'>
             Welcome to Fantastic ecommerce
           </h1>
           <p>
@@ -22,11 +22,12 @@ export default function Home() {
           </p>
         </div>
         {/*<div className='absolute w-1/2 px-4 right-0'>*/}
-        <div className=''>
-        <div>
-            <img  src="/images/banner.jpg"></img>
-            </div>
-            
+        <div className='relative'>
+          <div className='absolute inset-0 from-pink-600 to-blue-700 bg-gradient-45 rounded-lg blur-xl'></div>
+          <div className='relative'>
+            <img className="rounded-xl" src="/images/banner.jpg"></img>
+          </div>
+
         </div>
       </section>
     </div>
