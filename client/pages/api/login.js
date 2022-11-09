@@ -1,20 +1,14 @@
-// pages/api/login.js
-import { Magic } from '@magic-sdk/admin';
-import Iron from '@hapi/iron';
-import CookieService from '../../lib/cookie';
-export default async (req, res) => {
-  if (req.method !== 'POST') return res.status(405).end();
-  // exchange the did from Magic for some user data
-  const did = req.headers.authorization.split('Bearer').pop().trim();
-  const user = await new Magic(
-    process.env.MAGIC_SECRET_KEY,
-  ).users.getMetadataByToken(did);
-  // Author a couple of cookies to persist a user’s session
-  const token = await Iron.seal(
-    user,
-    process.env.ENCRYPTION_SECRET,
-    Iron.defaults,
-  );
-  CookieService.setTokenCookie(res, token);
-  res.end();
-};
+import { magic } from '../../lib/magic'
+import { setLoginSession } from '../../lib/auth'
+export default async function login(req, res) {
+  console.log(res)
+  try {
+    const didToken = req.headers.authorization.slice(7)
+    const metadata = await magic.users.getMetadataByToken(didToken)
+    const session = { ...metadata }
+    await setLoginSession(res, session)
+    res.status(200).send({ done: true })
+  } catch (error) {
+    res.status(error.status || 500).end(error.message)
+  }
+}
