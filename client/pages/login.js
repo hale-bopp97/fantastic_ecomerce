@@ -1,6 +1,7 @@
 import Nav from '../components/Nav'
 import { Magic } from 'magic-sdk'
 import { useUser } from '../lib/hooks'
+import Router from 'next/router'
 
 
 export default function Login() {
