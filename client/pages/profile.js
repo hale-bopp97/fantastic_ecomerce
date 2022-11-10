@@ -1,7 +1,9 @@
-import { useUser } from '../lib/hooks'
+import { useContext } from 'react';
+import { UserContext } from '../lib/UserContext';
 
 const Profile = () => {
-  const user = useUser({ redirectTo: '/login' })
+  const [user] = useContext(UserContext);
+  //const user = useUser({ redirectTo: '/login' })
 
   return (
     <div>
