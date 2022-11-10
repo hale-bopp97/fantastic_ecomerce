@@ -50,8 +50,8 @@ MIT license
   * Email: <a href="mailto:bturner1138@hotmail.com">bturner1138@hotmail.com</a>
 * Grant Lewandowski
   * Github: <a href="https://github.com/Grunt395">Grunt395</a>
-  * Email: <a href="#"></a>
+  * Email: <a href="mailto:Grantlew395@gmail.com">Grantlew395@gmail.com</a>
 * Matthew Hendricks
   * Github: <a href="https://github.com/hale-bopp97">hale-bopp97</a>
-  * Email: <a href="#">#</a>
+  * Email: <a href="mattastik@gmail.com">mattastik@gmail.com</a>
 
