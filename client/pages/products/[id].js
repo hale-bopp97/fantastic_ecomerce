@@ -27,7 +27,7 @@ export default function ProductDetails() {
         setLoading(true);
         const stripe = await stripePromise;
         const checkoutSession = await axios.post('/api/create-stripe-session',
-            {item: { name: "stickers", description: "stickers", image: "https://m.media-amazon.com/images/I/61BTqI2kzeL._AC_.jpg", quantity: 1, price: 499 }}
+            {item: { name: productDetails.name, description:productDetails.description, image: `https://fantastic-ecomerce.vercel.app/${productDetails.image}`, quantity: 1, price: productDetails.price }}
         );
         const result = await stripe.redirectToCheckout({
             sessionId: checkoutSession.data.id,
