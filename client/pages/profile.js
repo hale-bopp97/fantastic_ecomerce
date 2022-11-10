@@ -12,6 +12,7 @@ const Profile = () => {
       {user && (
         <>
           <p>Your session:</p>
+          <p>{user.email}</p>
           <pre>{JSON.stringify(user, null, 2)}</pre>
         </>
       )}
