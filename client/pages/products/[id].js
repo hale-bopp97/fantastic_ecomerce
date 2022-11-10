@@ -3,6 +3,9 @@ import Nav from '../../components/Nav'
 import { QUERY_PRODUCT } from "../../utils/queries"
 import { useQuery } from '@apollo/client'
 import { DirectiveLocation } from "graphql"
+import { loadStripe } from '@stripe/stripe-js';
+import axios from 'axios';
+import { useState } from 'react';
 
 
 const productData = [
@@ -15,6 +18,25 @@ export default function ProductDetails() {
     const { loading, data } = useQuery(QUERY_PRODUCT, { variables: { id: id } })
     const productDetails = data?.product || {}
     console.log(productDetails)
+
+    const [loadingPayment, setLoading] = useState(false)
+
+    const publishableKey = "pk_test_51M2LLEInbrXpQEnYKmxF4lJLv4I6iJkh4HxQQnLaqDmtPmLT3xajVePHSMlme3g7ZUQe8SjqRBop8JFIEGFSTIRf005GIi47aX";
+    const stripePromise = loadStripe(publishableKey);
+    const createCheckOutSession = async () => {
+        setLoading(true);
+        const stripe = await stripePromise;
+        const checkoutSession = await axios.post('/api/create-stripe-session',
+            {item: { name: "stickers", description: "stickers", image: "https://m.media-amazon.com/images/I/61BTqI2kzeL._AC_.jpg", quantity: 1, price: 499 }}
+        );
+        const result = await stripe.redirectToCheckout({
+            sessionId: checkoutSession.data.id,
+        });
+        if (result.error) {
+            alert(result.error.message);
+        }
+        setLoading(false);
+    };
     return (
 
 
@@ -42,7 +64,7 @@ export default function ProductDetails() {
                                 <li className="text-sky-400">{productDetails.description}</li>
                                 <p className="text-sky-400 font-bold underline">Price</p>
                                 <li className="text-sky-400">${productDetails.price}</li>
-                                <button className="rounded-lg bg-sky-300 hover:scale-125 hover:bg-sky-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 text-pink-600 p-1">Buy Now</button>
+                                <button onClick= { createCheckOutSession } className="rounded-lg bg-sky-300 hover:scale-125 hover:bg-sky-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 text-pink-600 p-1">Buy Now</button>
                             </ul>
                         </div>
                     </div>

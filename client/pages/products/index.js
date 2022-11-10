@@ -3,6 +3,8 @@ import Nav from '../../components/Nav'
 import { QUERY_PRODUCTS } from '../../utils/queries'
 import { useQuery } from '@apollo/client'
 
+
+
 // const productData = [
 //     { name: "stickers", image: "/images/stickers.jpg" },
 //     { name: "mousepad", image: '/images/mousepad.jpg' },
@@ -20,6 +22,8 @@ export default function Product() {
     console.log(data)
     const productData = data?.products || []
     console.log(productData)
+   
+
     return (
         <div> {loading ? <div>loading...</div> :
             <div className='bg-black'>

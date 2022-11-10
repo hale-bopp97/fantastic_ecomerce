@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/hale-bopp97/fantastic_ecomerce#readme",
   "dependencies": {
-    "concurrently": "^7.5.0"
-   
+    "concurrently": "^7.5.0",
+    "stripe": "^10.17.0",
+    "stripe-checkout": "^1.0.9"
   }
 }
