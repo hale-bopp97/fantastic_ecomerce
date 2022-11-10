@@ -47,7 +47,7 @@ MIT license
   * Email: <a href="mailto:Wrightw404@gmail.com">Wrightw404@gmail.com</a>
 * Brandon Turner
   * Github: <a href="https://github.com/BT616">BT16</a>
-  * Email: <a href="#"></a>
+  * Email: <a href="mailto:bturner1138@hotmail.com">bturner1138@hotmail.com</a>
 * Grant Lewandowski
   * Github: <a href="https://github.com/Grunt395">Grunt395</a>
   * Email: <a href="#"></a>
@@ -55,23 +55,3 @@ MIT license
   * Github: <a href="https://github.com/hale-bopp97">hale-bopp97</a>
   * Email: <a href="#">#</a>
 
-query Product($id: ID!) {
-  product(_id: $id) {
-    _id
-    description
-    image
-    name
-    price
-  }
-}
-
-
-query Products {
-  products {
-    _id
-    description
-    image
-    name
-    price
-  }
-}
