@@ -46,12 +46,12 @@ export default function ProductDetails() {
             <div className="absolute inset-0 from-pink-500 to-blue-500 bg-gradient-45 rounded-lg blur-3xl opacity-25"></div>
 
 
-            <h1 className="relative  text-3xl text-sky-400 font-bold justify-center content-center items-center text-center pt-40 py-20">
+            <h1 className="relative text-3xl text-sky-400 font-bold justify-center content-center items-center text-center px-40 py-20">
                 {productDetails.name}
             </h1>
 
             <section>
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center px-80">
                     <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-lg blur-2xl opacity-50"></div>
                     <div className=" bg-black rounded-lg relative grid grid-flow-col grid-cols-3 items-center">
 
