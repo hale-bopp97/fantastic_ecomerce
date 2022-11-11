@@ -1,37 +1,37 @@
 [{
-        "name": "stickers",
+        "name": "Stickers",
         "image": "/images/stickers.jpg",
-        "description": "corgi sticker for sale",
+        "description": "All vsco stickers are made of high quality vinyl material, which is safe and non-toxic, waterproof. 100% brand new high-definition printing, the patterns are more precise and clear. Each waterproof sticker can be perfectly cut according to the shape and size, which can be used directly. The sticker can be stuck on repeatedly and the adhesive can be torn off without any residues.",
         "price": 4.99
     },
     {
-        "name": "mousepad",
+        "name": "Mousepad",
         "image": "/images/mousepad.jpg",
-        "description": "mousepad for sale",
+        "description": "The image printed is using crystal clear enamel coating, it features great locking-color effect, will not fade after repeated cleaning. Water resistant coating effectively prevent accidental damage from spilled liquid, while easy to clean and won't delay your work or game.",
         "price": 2.99
     },
     {
-        "name": "keyboard",
+        "name": "Keyboard",
         "image": "/images/keyboard.jpg",
-        "description": "cool keyboard for sale",
+        "description": "Keyboard with low-profile keys for a comfortable, quiet typing experience Includes a matte black keyboard with US layout (QWERTY) and a simple wired USB connection.",
         "price": 7.99
     },
     {
-        "name": "mic",
+        "name": "Mic",
         "image": "/images/mic.jpg",
-        "description": "microphone for sale",
+        "description": "Built-in anti-vibration shock mount: Isolate the mic and suppress the sound of unintentional rumbles and bumps with the elastic rope suspension.",
         "price": 3.99
     },
     {
-        "name": "monitor",
+        "name": "Monitor",
         "image": "/images/monitor.jpg",
-        "description": "lcd screen cool monitor",
+        "description": "24 Ultra slim profile Contemporary sleek metallic design, Slim bezel with thin chassis, 2 x HDMI Ports (convertible to DVI), VESA wall mount ready, Mounting type: VESA Hole Pattern 100mm x 100mm, Up to 75Hz Refresh Rate, Fast Response Time",
         "price": 8.99
     },
     {
-        "name": "headphones",
+        "name": "Headphones",
         "image": "/images/headphones.jpg",
-        "description": "good headphones for sale",
+        "description": "Hi-fi Stereo Sound:The High-fidelity stereo sound benefits from the 40 mm audio driver, which deliver exceptionally clear sound with full dynamic range and rich bass and crisp mids and you can enjoy gorgeous deep bass / Hi-Fi stereo sound feast. Just lose yourself in the music.",
         "price": 9.99
     }
 ]
